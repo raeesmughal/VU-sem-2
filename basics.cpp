@@ -63,6 +63,29 @@ int main() {
 
 
 
+// basic calculator
+#include <iostream>
+using namespace std;
+
+int main() {
+    char op;
+    float a, b;
+
+    cout << "Enter operator (+, -, *, /): ";
+    cin >> op;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    switch(op) {
+        case '+': cout << "Result = " << a + b; break;
+        case '-': cout << "Result = " << a - b; break;
+        case '*': cout << "Result = " << a * b; break;
+        case '/': cout << "Result = " << a / b; break;
+        default: cout << "Invalid operator";
+    }
+
+    return 0;
+}
 
 
 
@@ -74,9 +97,18 @@ int main() {
 
 
 
+// Print Numbers from 1 to 10 Using Loop
 
+#include <iostream>
+using namespace std;
 
-
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        cout << i << " ";
+    }
+    cout << endl;
+    return 0;
+}
 
 
 
